@@ -13,7 +13,7 @@ function Navbar() {
             <span className="text-2xl md:text-xl lg:text-lg font-medium font-display">ToDesktop</span>
           </a>
   
-          <div className="nav-menu md:flex gap-10 hidden font-body md:text-xl lg:text-lg text-2xl  ">
+          <div id="nav-menu" className="lg:flex gap-10 hidden font-body md:text-xl lg:text-lg text-2xl  ">
             <a href="#" className="font-medium hover:text-primary" >Pricing</a>
             <a href="#" className="font-medium hover:text-primary" >Docs</a>
             <a href="#" className="font-medium hover:text-primary" >Changelog</a>
@@ -27,15 +27,20 @@ function Navbar() {
             <i class="fa-solid fa-arrow-right text-gray-400"></i>
           </div>
           </div>
-          <button className='fa-solid fa-bars text-gray-600 p-2 md:hidden text-lg' onClick={handleMenu}></button>
+
+          <button className='p-2 lg:hidden text-lg' onClick={handleMenu}>
+            <i className="fa-solid fa-bars text-gray-600"></i>
+          </button>
   
-          <div id="toggle-nav" className="fixed z-10 inset-0 bg-white p-3 hidden md:hidden">
-            <div id="nav-bar" className="flex justify-between">
+          <div id="toggle-nav" className="hidden fixed z-10 inset-0 bg-white p-3 md:hidden">
+             <div id="nav-bar" className="flex justify-between">
               <a href="#" id="brand" className="flex gap-2 items-center">
                 <img className="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="" />
                 <span className="text-xl font-medium font-display">ToDesktop</span>
               </a>
-              <button className=' fa-solid fa-xmark text-gray-600 p-2 md:hidden text-xl' onClick={handleMenu}></button>
+              <button className='p-2 md:hidden text-xl' onClick={handleMenu}>
+                <i className="fa-solid fa-xmark text-gray-600"></i>
+              </button>
               </div>
               <div className="mt-6">
               <a href="#" className="p-3 m-3 font-semibold text-lg hover:bg-gray-50 block" >Pricing</a>
