@@ -1,0 +1,12 @@
+
+
+div{
+    height: 22em;
+    width:20em;
+    background-image: url("bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    position: fixed;
+    right: 0;
+}

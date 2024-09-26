@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    height: 40px;
+    width: 150px;
+    border: 2px solid black;
+    
+}
+
+#container{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    /* align-items: start; */
+    /* align-content: start; */
+    /* flex-wrap: wrap; */
+    
+}
+
+#box1{
+    background-color: lightblue;
+}
+
+#box2{
+    background-color: lightgreen;
+    height: 120px;
+    /* flex-shrink: 0; */
+}
+
+#box3{
+    background-color: lightcyan;
+    flex-grow: 1;
+}
+#box4{
+    background-color: crimson;
+}
+#box5{
+    background-color: lightpink;
+}
