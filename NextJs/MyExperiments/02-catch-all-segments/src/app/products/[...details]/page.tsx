@@ -1,10 +1,7 @@
+
 export default function Detals({ params }: { params: { details: string[] } }) {
 
-    if (parseInt(params.details?.[2] || '0') > 100){
-        return (
-            <h1>Product Id not found</h1>
-        )
-    }
+    
   if (params.details.length === 3) {
     return (
       <div>
