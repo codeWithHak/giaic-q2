@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 1.3rem;
+    color: white;
+}
+
+.hero{
+    background-color: #23424A;
+    padding: 100px 0;
+}
+
+.container{
+    border: 2px solid red;
+    width: 80%;
+    margin: 0 auto;
+}
+.hero__text{
+    width: 60%;
+    border: 2px solid red;
+}
+.hero h1{
+    font-size: 3em;
+}
+.btn{
+    color: #23424A;
+    background-color: cyan;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 100px;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}
