@@ -1,0 +1,121 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1600px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+
+
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    justify-content: space-between;
+    
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text { 
+    width: 65%;
+    max-width: 720px;
+    border: 2px solid blue;
+}
+
+.hero__img {
+    width: 35%;
+    max-width:400px ;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin: auto 0; */
+    border: 2px solid green;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.left-col{
+    border: 2px solid red;
+    width: 60%;
+    /* max-width: 800px; */
+}
+
+.left-col h2{
+    font-size: 1.5em;
+}
+
+.right-col{
+    color: white;
+    background: cyan;
+    text-align: center;
+    border: 2px solid black;
+    width: 30%;
+    /* max-width: 400px; */
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
